@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define nn '\n'
+int main()
+{
+    long long sasa, lena;
+
+    cin >> sasa >> lena;
+    long long sum = sasa / lena;
+    
+
+    if (sum%2==0)     
+    {
+        cout << "NO" << nn;
+    }
+
+    else
+    {
+        cout << "YES" << nn;
+    }
+
+    // Altanative
+    
+    // if (sum& 1)     
+    // {
+    //     cout << "YES" << nn;
+    // }
+
+    // else
+    // {
+    //     cout << "NO" << nn;
+    // }
+
+    return 0;
+}
