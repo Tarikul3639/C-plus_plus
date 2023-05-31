@@ -1,0 +1,58 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define nn '\n'
+#define tt '\t'
+#define ll long long
+int main()
+{
+    int n;
+    int d;
+    cout << "Number of test case:";
+    cin >> n;
+    vector<int> data;
+    cout << "Array import:";
+    while (n--)
+    {
+        cin >> d;
+        data.push_back(d); /// data import function
+    }
+    cout << nn;
+
+    cout << "Before reverse=";
+    for (int b : data)
+    {
+        cout << " " << b; /// data print function
+    }
+    cout << nn;
+
+    cout << "lenth=";
+
+    int lenth = data.size();
+    cout << lenth;
+    cout << nn;
+
+    vector<int> rdata;
+    cout << "After reverse=";
+
+    for (int i = lenth - 1; i >= 0; i--)
+    {
+        rdata.push_back(data[i]);          /// data copy
+    }
+    for (int b : rdata)
+    {
+        cout << " " << b;
+    }
+    cout << nn;
+
+    cout << "After sort=";
+    sort(data.begin(), data.end()); /// using sort function
+    for (int b : data)
+    {
+        cout << " " << b;            /// data print function
+    }
+    cout << nn;
+    cout << nn;
+    cout << nn;
+
+    return 0;
+}
